@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Filip-Povidernyi-goit-react-woolf-hw-01-components/static/css/main.ca24351d.css",
+    "main.js": "/Filip-Povidernyi-goit-react-woolf-hw-01-components/static/js/main.da51a361.js",
+    "index.html": "/Filip-Povidernyi-goit-react-woolf-hw-01-components/index.html",
+    "main.ca24351d.css.map": "/Filip-Povidernyi-goit-react-woolf-hw-01-components/static/css/main.ca24351d.css.map",
+    "main.da51a361.js.map": "/Filip-Povidernyi-goit-react-woolf-hw-01-components/static/js/main.da51a361.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca24351d.css",
+    "static/js/main.da51a361.js"
+  ]
+}
