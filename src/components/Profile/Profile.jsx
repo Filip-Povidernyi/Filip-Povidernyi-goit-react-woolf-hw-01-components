@@ -1,32 +1,36 @@
 
-export const Profile = (props) => {
-    return props.dataProfile.map(user => {
-    <div class="profile">
-        <div class="description">
+import profileStyle from './style.module.css'
+
+const Profile = ({username, avatar, tag, location, stats}) => {
+    return (<div className={profileStyle.profile}>
+        <div className={profileStyle.container}>
+        <div className={profileStyle.description}>
             <img
-                src={user.avatar}
-                alt={user.username}
-                class="avatar"
+                src={avatar}
+                alt={username}
+                className={profileStyle.avatar}
             />
-            <p class="name">{user.username}</p>
-            <p class="tag">@{user.tag}</p>
-            <p class="location">{user.location}</p>
+            <p className={profileStyle.name}>{username}</p>
+            <p className={profileStyle.tag}>@{tag}</p>
+            <p className={profileStyle.location}>{location}</p>
         </div>
 
-        <ul class="stats">
-            <li>
-                <span class="label">Followers</span>
-                <span class="quantity">{user.stats.followers}</span>
+        <ul className={profileStyle.stats}>
+            <li className={profileStyle.listItem}>
+                <span className={profileStyle.label}>Followers</span>
+                <span className={profileStyle.quantity}>{stats.followers}</span>
             </li>
-            <li>
-                <span class="label">Views</span>
-                <span class="quantity">{user.stats.views}</span>
+            <li className={profileStyle.listItem}>
+                <span className={profileStyle.label}>Views</span>
+                <span className={profileStyle.quantity}>{stats.views}</span>
             </li>
-            <li>
-                <span class="label">Likes</span>
-                <span class="quantity">{user.stats.likes}</span>
+            <li className={profileStyle.listItem}>
+                <span className={profileStyle.label}>Likes</span>
+                <span className={profileStyle.quantity}>{stats.likes}</span>
             </li>
-        </ul>
-    </div>
-    })
+            </ul>
+        </div>
+    </div>)
 }
+
+export default Profile
